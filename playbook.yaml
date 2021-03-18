@@ -1,6 +1,14 @@
 - hosts: all
   tasks: 
-    - name: Install apache
+    - name: Install apache2
       apt:
         name: apache
+        state: present
+    - name: Install mysql
+      apt:
+        name: mysql-server
+        state: present
+    - name: Install php
+      apt:
+        name: php
         state: present
