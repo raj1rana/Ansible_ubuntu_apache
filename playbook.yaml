@@ -2,7 +2,7 @@
   tasks: 
     - name: Install apache2
       apt:
-        name: apache
+        name: apache2
         state: present
     - name: Install mysql
       apt:
