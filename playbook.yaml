@@ -1,4 +1,5 @@
 - hosts: all
+  become: yes
   tasks: 
     - name: Install apache2
       apt:
